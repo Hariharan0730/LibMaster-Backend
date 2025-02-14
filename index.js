@@ -3,7 +3,7 @@ const path = require("path");
 const cors = require("cors");
 const mongoose = require("mongoose");
 const cron = require("node-cron");
-const BookRoutes = require("./routes/BookRoutes");
+const BookRoutes = require("./routes/bookroutes");
 const userRoutes = require("./routes/authRoutes");
 const { sendOverdueEmails, sendAdminSummary } = require("./emailService");
 require("dotenv").config();
